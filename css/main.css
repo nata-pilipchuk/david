@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'FregatRegular';
+  src: url("../fonts/FregatRegular.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'FregatBold';
+  src: url("../fonts/FregatBold.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'PTSansRegular';
+  src: url("../fonts/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: 'PTSansBold';
+  src: url("../fonts/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+body {
+  font-family: 'FregatRegular', sans-serif;
+  font-size: 16px; }
+
+a {
+  text-decoration: none; }
+  a:hover, a a:focus a:visited, a a:active {
+    text-decoration: none; }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.flex_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.container {
+  padding: 0; }
+
+nav.navbar-default {
+  background-color: #fdfbf6;
+  border: none;
+  margin: 0; }
+  nav.navbar-default .navbar-nav li a {
+    color: #363636;
+    padding: 15px 0px 15px 0;
+    font-size: 14px;
+    text-transform: uppercase; }
+    nav.navbar-default .navbar-nav li a:hover, nav.navbar-default .navbar-nav li a:active, nav.navbar-default .navbar-nav li a:focus {
+      color: #4cb027; }
+  nav.navbar-default .nav_dot {
+    padding: 15px 3px 15px 3px; }
+  nav.navbar-default .navbar-right .lan {
+    display: inline-block;
+    padding: 0 0 0 10px; }
+    nav.navbar-default .navbar-right .lan span:hover, nav.navbar-default .navbar-right .lan span:active, nav.navbar-default .navbar-right .lan span:focus {
+      color: #be282f; }
+    nav.navbar-default .navbar-right .lan span.active {
+      color: #be282f; }
+  nav.navbar-default .navbar-right button {
+    margin: 10px 5px; }
+  nav.navbar-default .navbar-brand {
+    font-family: 'FregatBold';
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #363636; }
+
+.btn_white {
+  color: #893626;
+  background-color: #fff;
+  border: 1px solid #893626;
+  border-radius: 3px;
+  padding: 3px 30px; }
+  .btn_white:hover {
+    color: #fff;
+    background-color: #893626; }
+
+.btn_red {
+  color: #fff;
+  background-color: #893626;
+  border: 1px solid #893626;
+  border-radius: 3px;
+  padding: 3px 30px; }
+  .btn_red:hover {
+    color: #893626;
+    background-color: #fff; }
+
+.banner {
+  background-image: url("../img/banner.png");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .banner .main_title {
+    font-size: 28px;
+    font-family: 'FregatBold';
+    color: #4cb027;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+  .banner .banner_text {
+    font-size: 19px;
+    font-family: 'PTSansRegular';
+    color: #4e4e4e;
+    margin: 20px 0; }
+  .banner .banner_info {
+    height: 600px; }
+  .banner .banner_btn_green {
+    background-color: #63b945;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'PTSansBold';
+    text-transform: uppercase;
+    font-size: 100%;
+    padding: 13px 40px; }
+  .banner .banner_btn_white {
+    background: none;
+    border: 1px solid #63b945;
+    border-radius: 5px;
+    color: #63b945;
+    font-family: 'PTSansBold';
+    text-transform: uppercase;
+    font-size: 100%;
+    padding: 13px 13px;
+    margin-left: 35px; }
+
+.program {
+  background-color: #63b945;
+  height: 220px; }
+  .program .program_title {
+    color: #fff;
+    font-family: 'FregatBold';
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 220px; }
+  .program .program_info {
+    height: 220px;
+    padding: 0; }
+    .program .program_info .program_info_text {
+      color: #fff;
+      font-family: 'PTSansRegular';
+      font-size: 16px; }
+      .program .program_info .program_info_text span {
+        font-family: 'PTSansBold'; }
+
+.include .include_title {
+  font-family: 'FregatBold';
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #4cb027;
+  margin: 30px auto;
+  text-align: center; }
+.include .include_text_top {
+  font-family: 'PTSansRegular';
+  color: #313131;
+  font-size: 19px;
+  text-align: center;
+  padding: 0 90px; }
+.include .owl-carousel-include img {
+  width: 970px;
+  margin: 20px auto; }
+.include .owl-carousel-include .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateY(-50%); }
+.include .owl-carousel-include .owl-prev {
+  background: url(../img/prev.png);
+  height: 65px;
+  background-size: contain;
+  width: 65px;
+  opacity: 1; }
+  .include .owl-carousel-include .owl-prev:hover {
+    background: url(../img/prev.png);
+    height: 65px;
+    background-size: contain;
+    width: 65px;
+    opacity: 1; }
+.include .owl-carousel-include .owl-next {
+  background: url(../img/next.png);
+  height: 65px;
+  background-size: contain;
+  width: 65px;
+  opacity: 1; }
+  .include .owl-carousel-include .owl-next:hover {
+    background: url(../img/next.png);
+    height: 65px;
+    background-size: contain;
+    width: 65px;
+    opacity: 1; }
+.include .owl-carousel-include .owl-dots {
+  position: absolute;
+  top: 90%;
+  width: 100%; }
+  .include .owl-carousel-include .owl-dots .owl-dot.active span, .include .owl-carousel-include .owl-dots .owl-dot:hover span {
+    background: #869791;
+    width: 15px;
+    height: 15px;
+    background-color: #fff; }
+  .include .owl-carousel-include .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+    background: none;
+    border: 1px solid #fff; }
+.include .include_check {
+  padding: 0 115px;
+  margin: 20px 0; }
+  .include .include_check span {
+    color: #4cb027;
+    font-size: 22px; }
+  .include .include_check p {
+    font-size: 15px;
+    font-family: 'PTSansRegular';
+    color: #666666; }
+.include .include_text_bottom {
+  color: #bfbfbf;
+  font-size: 15px;
+  text-align: center;
+  padding: 0 170px;
+  font-family: 'PTSansRegular';
+  margin: 20px 0 30px; }
+
+.call {
+  background-color: #ddffcc; }
+  .call .call_title {
+    font-size: 24px;
+    font-family: 'FregatBold';
+    text-align: center;
+    margin: 20px auto;
+    color: #707070; }
+  .call .call_text {
+    font-size: 17px;
+    font-family: 'PTSansRegular';
+    text-align: center;
+    margin: 0px auto 40px;
+    color: #a2a2a2; }
+  .call .call_city {
+    font-size: 20px;
+    color: #656565;
+    text-align: center;
+    margin: 0; }
+  .call .call_str, .call .call_tel {
+    font-size: 16px;
+    color: #656565;
+    text-align: center;
+    margin: 0; }
+  .call .call_button {
+    text-align: center; }
+    .call .call_button .call_btn {
+      background: none;
+      color: #656565;
+      border: 1px solid #656565;
+      border-radius: 5px;
+      padding: 10px 83px;
+      font-size: 14px;
+      font-family: 'FregatBold';
+      text-transform: uppercase;
+      margin: 30px auto; }
+
+footer {
+  background-color: #4c4c4c;
+  color: #fff;
+  height: 50px; }
+  footer .footer_copyr {
+    padding: 15px 0;
+    font-size: 12px;
+    font-family: 'PTSansRegular'; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+
+  nav.navbar-default .navbar-nav li a {
+    padding: 10px 0; }
+
+  .banner {
+    text-align: center;
+    height: 100%;
+    padding: 15px 0;
+    background-position: 73%;
+    position: relative;
+    z-index: 1; }
+    .banner:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(38, 38, 38, 0.4);
+      z-index: -1; }
+    .banner .banner_text {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #fff; }
+    .banner .banner_info {
+      height: 100%; }
+    .banner .main_title {
+      font-size: 26px; }
+    .banner .banner_btn_white {
+      margin: 15px 0; }
+
+  .program {
+    height: auto; }
+    .program .program_title, .program .program_info {
+      height: 100%; }
+
+  .include .include_text_top {
+    padding: 0; }
+  .include .owl-carousel-include img {
+    width: 100%;
+    margin: 0; }
+  .include .owl-carousel-include .owl-prev, .include .owl-carousel-include .owl-prev:hover {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%; }
+  .include .owl-carousel-include .owl-next, .include .owl-carousel-include .owl-next:hover {
+    height: 35px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 50%; }
+  .include .include_check, .include .include_text_bottom {
+    padding: 0 12px; }
+  .include .include_check p {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=main.css.map */
